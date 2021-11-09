@@ -15,10 +15,10 @@ const config = {
 
   // Footer Information
   hostText: 'FullStack.cash',
-  hostUrl: 'https://fullstack.cash/',
+  hostUrl: 'https://mgtow.cash/',
   sourceCode: 'https://github.com/Permissionless-Software-Foundation/bch-wallet-starter',
-  torUrl: 'tozqhxcrknbv5l3wshwgj6vp3bj5ezw7qp4jdn4bjrhcpetpcq74j7ad.onion',
-  clearWebUrl: 'https://demo-wallet.fullstack.cash'
+  torUrl: 'TBD',
+  clearWebUrl: 'TBD'
 }
 
 module.exports = config
