@@ -4,14 +4,14 @@
 */
 
 const config = {
-  title: 'Wallet Demo',
-  titleShort: 'Demo',
+  title: 'MGTOW.cash',
+  titleShort: 'MGTOW.cash',
   balanceText: 'BCH Balance',
   balanceIcon: 'fab-bitcoin',
 
   // The BCH address used in a memo.cash account. Used for tracking the IPFS
   // hash of the mirror of this site.
-  memoAddr: 'bitcoincash:qzr4s6fwk55zvl7xqsjpr4k7zkqfmvcz7qapxys8t5',
+  memoAddr: 'bitcoincash:qrjk268ud379rlp76t8hr3n2uu3mgw2jdvy7r347vq',
 
   // Footer Information
   hostText: 'FullStack.cash',
