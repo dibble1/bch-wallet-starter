@@ -48,7 +48,7 @@ class TokenSwap extends React.Component {
         <Row>
           <Col xs={12}>
             <Box
-              title='Token Swap'
+              title='MGTOW Token Vending Machine'
               type='primary'
               //closable
               //collapsable
@@ -61,9 +61,8 @@ class TokenSwap extends React.Component {
                 ///>
               //}
             >
-            <p><strong>Token Vending Machine</strong></p>
-            <p>Collect your very own MGTOW Tokens today and start tipping!</p>
-            <p>Vending Machine Status: Online</p>
+            <p><strong>Collect your very own MGTOW Tokens today and start tipping!</strong></p>
+            <p>Vending Machine Status: <i>Online</i></p>
 
               {
                 isChecked &&
