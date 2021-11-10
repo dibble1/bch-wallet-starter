@@ -148,4 +148,4 @@ class AboutMGTOW extends React.Component {
   }
 }
 
-export default TokenSwap
+export default AboutMGTOW
