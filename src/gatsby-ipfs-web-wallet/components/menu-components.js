@@ -56,6 +56,11 @@ const MenuComponents = props => {
       component: <Configure key='Configure' {...props} />,
       menuItem: <Item icon='fas-cog' key='Configure' text='Configure' />
     },
+    {
+      key: 'Encrypted Chat',
+      component: <EncryptedChat key='Encrypted Chat' {...props} />,
+      menuItem: <Item icon='fa-exchange-al' key='Encrypted Chat' text='Encrypted Chat' />
+    },
     //{
     //  key: 'TX History',
     //  component: <TXHistory key='TX History' {...props} />,
@@ -74,7 +79,7 @@ const MenuComponents = props => {
       key: 'Token Swap',
       component: <TokenSwap key='Token Swap' {...props} />,
       menuItem: (
-        <Item icon='fas-cog' key='Token Swap' text='Token Swap' />
+        <Item icon='fa-exchange-alt' key='Token Swap' text='Token Swap' />
       )
     }
   ]
