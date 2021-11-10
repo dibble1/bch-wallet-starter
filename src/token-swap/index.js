@@ -9,7 +9,7 @@
 import React from 'react'
 import { Row, Col, Content, Box, Button } from 'adminlte-2-react'
 import { getWalletInfo } from 'gatsby-ipfs-web-wallet/src/components/localWallet'
-import bchImage from '../images/bch_deposit_address.png'
+//import bchImage from '../images/bch_deposit_address.png'
 
 const BchWallet =
   typeof window !== 'undefined'
@@ -64,7 +64,7 @@ class TokenSwap extends React.Component {
             >
             <p><strong>Collect your very own MGTOW Tokens today and start tipping!</strong></p>
             <p>Vending Machine Status: <i>Online</i></p>
-            <Img src="bchImage" alt="Send any amount of Bitcoin Cash (BCH) to this address and receive MGTOW tokens in return in the very same wallet." />
+            <img src="../images/bch_deposit_address.png" width="60" height="60" alt="Send any amount of Bitcoin Cash (BCH) to this address and receive MGTOW tokens in return in the very same wallet." />
 
               {
                 isChecked &&
