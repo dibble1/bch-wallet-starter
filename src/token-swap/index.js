@@ -50,15 +50,15 @@ class TokenSwap extends React.Component {
             <Box
               title='Token Swap'
               type='primary'
-              closable
-              collapsable
+              //closable
+              //collapsable
               loaded={!inFetch}
               footer={
-                <Button
-                  type='primary'
-                  text='Check Balance'
-                  onClick={_this.handleGetBalance}
-                />
+                //<Button
+                //  type='primary'
+                //  text='Check Balance'
+                //  onClick={_this.handleGetBalance}
+                ///>
               }
             >
 
