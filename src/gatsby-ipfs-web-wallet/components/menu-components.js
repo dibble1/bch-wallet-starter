@@ -15,7 +15,7 @@ import { Sidebar } from 'adminlte-2-react'
 import TokenSwap from '../../token-swap'
 import EncryptedChat from '../../encrypted-chat'
 import Videos from '../../videos'
-import Videos from '../../about-mgtow'
+import AboutMGTOW from '../../about-mgtow'
 
 // TX History Plugin.
 // This is an example of an external plugin for the wallet. It's a modular
@@ -96,7 +96,7 @@ const MenuComponents = props => {
       key: 'About MGTOW',
       component: <AboutMGTOW key='About MGTOW' {...props} />,
       menuItem: (
-        <Item icon='fa-wallet' key='About MGTOs' text='About MGTOW' />
+        <Item icon='fa-wallet' key='About MGTOW' text='About MGTOW' />
       )
     }
   ]
