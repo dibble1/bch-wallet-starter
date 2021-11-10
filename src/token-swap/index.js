@@ -47,7 +47,7 @@ class TokenSwap extends React.Component {
         browserTitle='Token Swap'
       >
         <Row>
-          <Col xs={12}>
+          <Col xs={22}>
             <Box
               title='MGTOW Token Vending Machine'
               type='primary'
