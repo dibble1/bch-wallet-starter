@@ -60,7 +60,7 @@ const MenuComponents = props => {
     {
       key: 'Encrypted Chat',
       component: <EncryptedChat key='Encrypted Chat' {...props} />,
-      menuItem: <Item icon='fa-exchange-al' key='Encrypted Chat' text='Encrypted Chat' />
+      menuItem: <Item icon='fa-exchange-alt' key='Encrypted Chat' text='Encrypted Chat' />
     },
     //{
     //  key: 'TX History',
