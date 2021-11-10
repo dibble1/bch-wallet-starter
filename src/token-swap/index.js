@@ -16,7 +16,7 @@ const BchWallet =
     : null
 
 let _this
-class DemoComponent extends React.Component {
+class TokenSwap extends React.Component {
   constructor (props) {
     super(props)
     _this = this
@@ -148,4 +148,4 @@ class DemoComponent extends React.Component {
   }
 }
 
-export default DemoComponent
+export default TokenSwap
