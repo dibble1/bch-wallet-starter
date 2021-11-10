@@ -53,9 +53,7 @@ class TokenSwap extends React.Component {
               //closable
               //collapsable
               loaded={!inFetch}
-              <div>
                 <p>test</p>
-              </div>
               //footer={
                 //<Button
                 //  type='primary'
