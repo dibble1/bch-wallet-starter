@@ -43,7 +43,7 @@ class TokenSwap extends React.Component {
     return (
       <Content
         title='Token Swap'
-        featuredImage: ../images/bch_deposit_address.png
+        //featuredImage: ../images/bch_deposit_address.png
         subTitle='Swap BCH For MGTOW'
         browserTitle='Token Swap'
       >
