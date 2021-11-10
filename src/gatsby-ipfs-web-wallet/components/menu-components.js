@@ -82,6 +82,13 @@ const MenuComponents = props => {
       menuItem: (
         <Item icon='fa-exchange-alt' key='Token Swap' text='Token Swap' />
       )
+    },
+    {
+      key: 'Videos',
+      component: <Videos key='Videos' {...props} />,
+      menuItem: (
+        <Item icon='fa-wallet' key='Videos' text='Videos' />
+      )
     }
   ]
 }
