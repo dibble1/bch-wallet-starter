@@ -53,7 +53,6 @@ class TokenSwap extends React.Component {
               //closable
               //collapsable
               loaded={!inFetch}
-                <p>test</p>
               //footer={
                 //<Button
                 //  type='primary'
@@ -62,7 +61,7 @@ class TokenSwap extends React.Component {
                 ///>
               //}
             >
-
+                <p>test</p>
               {
                 isChecked &&
                   <div>
