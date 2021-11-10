@@ -53,13 +53,13 @@ class TokenSwap extends React.Component {
               //closable
               //collapsable
               loaded={!inFetch}
-              footer={
+              //footer={
                 //<Button
                 //  type='primary'
                 //  text='Check Balance'
                 //  onClick={_this.handleGetBalance}
                 ///>
-              }
+              //}
             >
 
               {
