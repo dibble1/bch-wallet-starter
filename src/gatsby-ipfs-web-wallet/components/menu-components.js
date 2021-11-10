@@ -14,6 +14,7 @@ import { Sidebar } from 'adminlte-2-react'
 //import DemoComponent from '../../demo-component'
 import TokenSwap from '../../token-swap'
 import EncryptedChat from '../../encrypted-chat'
+import Videos from '../../videos'
 
 // TX History Plugin.
 // This is an example of an external plugin for the wallet. It's a modular

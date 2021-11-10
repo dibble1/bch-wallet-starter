@@ -41,14 +41,14 @@ class Videos extends React.Component {
     } = _this.state
     return (
       <Content
-        title='Token Swap'
-        subTitle='Swap BCH For MGTOW'
-        browserTitle='Token Swap'
+        title='Videos'
+        subTitle='Videos'
+        browserTitle='Videos'
       >
         <Row>
           <Col xs={12}>
             <Box
-              title='Token Swap'
+              title='Videos'
               type='primary'
               //closable
               //collapsable
