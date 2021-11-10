@@ -47,12 +47,12 @@ class TokenSwap extends React.Component {
         browserTitle='Token Swap'
       >
         <Row>
-          <Col xs={22}>
+          <Col xs={12}>
             <Box
               title='MGTOW Token Vending Machine'
               type='primary'
-              //closable
-              //collapsable
+              closable
+              collapsable
               loaded={!inFetch}
               //footer={
                 //<Button
@@ -66,18 +66,10 @@ class TokenSwap extends React.Component {
             <p>Vending Machine Status: <i>Online</i></p>
             <img src="../images/bch_deposit_address.png" width="60" height="60" alt="Send any amount of Bitcoin Cash (BCH) to this address and receive MGTOW tokens in return in the very same wallet." />
 
-              {
-                isChecked &&
-                  <div>
-                    <p>Confirmed: {confirmedBalance}</p>
-                    <p>Unconfirmed: {unconfirmedBalance}</p>
-                    <p>Total : <strong>{totalBalance}</strong></p>
-                  </div>
-
-              }
 
             </Box>
           </Col>
+          <p>Test<i>Online</i></p>
         </Row>
       </Content>
     )
