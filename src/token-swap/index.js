@@ -61,7 +61,10 @@ class TokenSwap extends React.Component {
                 ///>
               //}
             >
-                <p>test</p>
+            <p><strong>Token Vending Machine</strong></p>
+            <p>Collect your very own MGTOW Tokens today and start tipping!</p>
+            <p>Vending Machine Status: Online</p>
+
               {
                 isChecked &&
                   <div>
