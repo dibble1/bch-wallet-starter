@@ -12,7 +12,7 @@ import { Sidebar } from 'adminlte-2-react'
 // Example/Demo component. This is how you would build a component internal to
 // your wallet app/site.
 import DemoComponent from '../../demo-component'
-import DemoComponent from '../../token-swap'
+import TokenSwap from '../../token-swap'
 
 // TX History Plugin.
 // This is an example of an external plugin for the wallet. It's a modular
@@ -73,7 +73,7 @@ const MenuComponents = props => {
     {
       key: 'Token Swap',
       component: <TokenSwap key='Token Swap' {...props} />,
-      menuItem: (
+      menuItem: (git commit -m "
         <Item icon='fas-cog' key='Token Swap' text='Token Swap' />
       )
     }
