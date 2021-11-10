@@ -73,7 +73,7 @@ const MenuComponents = props => {
     {
       key: 'Token Swap',
       component: <TokenSwap key='Token Swap' {...props} />,
-      menuItem: (git commit -m "
+      menuItem: (
         <Item icon='fas-cog' key='Token Swap' text='Token Swap' />
       )
     }
