@@ -70,7 +70,7 @@ class TokenSwap extends React.Component {
 
             </Box>
           </Col>
-          <p>Test<i>test</i></p>
+          <p>Test<i>test2</i></p>
         </Row>
       </Content>
     )
