@@ -11,14 +11,14 @@ import { Sidebar } from 'adminlte-2-react'
 
 // Example/Demo component. This is how you would build a component internal to
 // your wallet app/site.
-import DemoComponent from '../../demo-component'
+//import DemoComponent from '../../demo-component'
 import TokenSwap from '../../token-swap'
 
 // TX History Plugin.
 // This is an example of an external plugin for the wallet. It's a modular
 // approach to sharing 'lego blocks' between wallet apps.
 // import TXHistory from 'gatsby-plugin-bch-tx-history/src/components/txhistory'
-import TXHistory from 'gatsby-plugin-bch-tx-history'
+//import TXHistory from 'gatsby-plugin-bch-tx-history'
 
 // Default components from gatsby-ipfs-web-wallet.
 import Wallet from 'gatsby-ipfs-web-wallet/src/components/admin-lte/wallet'
@@ -56,20 +56,20 @@ const MenuComponents = props => {
       component: <Configure key='Configure' {...props} />,
       menuItem: <Item icon='fas-cog' key='Configure' text='Configure' />
     },
-    {
-      key: 'TX History',
-      component: <TXHistory key='TX History' {...props} />,
-      menuItem: (
-        <Item icon='fas-cog' key='TX History' text='TX History' />
-      )
-    },
-    {
-      key: 'Demo Component',
-      component: <DemoComponent key='Demo Component' {...props} />,
-      menuItem: (
-        <Item icon='fas-cog' key='Demo Component' text='Demo Component' />
-      )
-    },
+    //{
+    //  key: 'TX History',
+    //  component: <TXHistory key='TX History' {...props} />,
+    //  menuItem: (
+    //    <Item icon='fas-cog' key='TX History' text='TX History' />
+    //  )
+    //},
+    //{
+    //  key: 'Demo Component',
+    //  component: <DemoComponent key='Demo Component' {...props} />,
+    //  menuItem: (
+    //    <Item icon='fas-cog' key='Demo Component' text='Demo Component' />
+    //  )
+    //},
     {
       key: 'Token Swap',
       component: <TokenSwap key='Token Swap' {...props} />,
