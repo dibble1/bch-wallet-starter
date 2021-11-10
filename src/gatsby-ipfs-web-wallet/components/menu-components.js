@@ -13,6 +13,7 @@ import { Sidebar } from 'adminlte-2-react'
 // your wallet app/site.
 //import DemoComponent from '../../demo-component'
 import TokenSwap from '../../token-swap'
+import EncryptedChat from '../../encrypted-chat'
 
 // TX History Plugin.
 // This is an example of an external plugin for the wallet. It's a modular
