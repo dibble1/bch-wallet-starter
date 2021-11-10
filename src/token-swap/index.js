@@ -9,6 +9,7 @@
 import React from 'react'
 import { Row, Col, Content, Box, Button } from 'adminlte-2-react'
 import { getWalletInfo } from 'gatsby-ipfs-web-wallet/src/components/localWallet'
+import bchImage from '../images/bch_deposit_address.png'
 
 const BchWallet =
   typeof window !== 'undefined'
@@ -63,16 +64,8 @@ class TokenSwap extends React.Component {
             >
             <p><strong>Collect your very own MGTOW Tokens today and start tipping!</strong></p>
             <p>Vending Machine Status: <i>Online</i></p>
-            export const query = graphql`
-              query {
-                fileName: file(relativePath: { eq: "images/bch_deposit_address.png" }) {
-                  childImageSharp {
-                    fluid(maxWidth: 400, maxHeight: 250) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-              }
+            <img src="bchImage" alt="Send any amount of Bitcoin Cash (BCH) to this address and receive MGTOW tokens in return in the very same wallet." />
+
               {
                 isChecked &&
                   <div>
