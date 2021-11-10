@@ -148,4 +148,4 @@ class EncryptedChat extends React.Component {
   }
 }
 
-export default TokenSwap
+export default EncryptedChat
