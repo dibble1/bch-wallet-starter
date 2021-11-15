@@ -87,7 +87,7 @@ class TokenSwap extends React.Component {
                </tr>
             </table>
 
-            <label for="name">Send BCH $:</label>
+            <label for="name">Send From Wallet $:</label>
                 <input type="text" id="name" name="name">
             </Box>
 
