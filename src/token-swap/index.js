@@ -72,12 +72,9 @@ class TokenSwap extends React.Component {
             </Box>
           </Col>
           <p>Test<i>test1</i></p>
-          export default function Home() {
-            return (
-              // The import result is the URL of your image
+
               <img src={bchImage} alt="A dog smiling in a party hat" />
-            )
-          }
+
         </Row>
       </Content>
     )
