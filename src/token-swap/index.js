@@ -87,8 +87,12 @@ class TokenSwap extends React.Component {
                </tr>
             </table>
 
-            <label for="name">Send From Wallet $:</label>
-                <input type="text" id="name" name="name">
+            <form>
+            	<label>Enter Text</label>
+            	<input type="text" name="name" id="name"/>
+            	<input type="submit" name="submit" id="submit"/>
+            </form>
+            
             </Box>
 
           </Col>
