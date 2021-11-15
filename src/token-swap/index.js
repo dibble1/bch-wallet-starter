@@ -13,7 +13,7 @@ import bchImage from '../images/bch_deposit_address.png'
 import fullStackLogo from '../images/fullstack-logo.png'
 import zapitLogo from '../images/zapit-logo.png'
 import bitcoincomLogo from '../images/bitcoincom-logo.jpeg'
-import memocashLogo from '../images/memocash-logo.jpg'
+import memocashLogo from '../images/memocash-logo.jpeg'
 
 const BchWallet =
   typeof window !== 'undefined'
