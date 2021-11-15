@@ -65,7 +65,7 @@ class TokenSwap extends React.Component {
             >
             <p><strong>Collect your very own MGTOW Tokens today and start tipping!</strong></p>
             <p>Vending Machine Status: <i>Online</i></p>
-            <p><img src={bchImage}/ width="50" height="50"></p>
+            <p><img src={bchImage} width="50" height="50"/></p>
             </Box>
 
           </Col>
