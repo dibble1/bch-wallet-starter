@@ -88,11 +88,11 @@ class TokenSwap extends React.Component {
             </table>
 
             <form>
-            	<label>Enter Text</label>
-            	<input type="text" name="name" id="name"/>
-            	<input type="submit" name="submit" id="submit"/>
+            	<label>Send BCH $</label>
+            	<input type="text" name="Send" id="Send"/>
+            	<input type="button" name="Send" id="Send"/>
             </form>
-            
+
             </Box>
 
           </Col>
