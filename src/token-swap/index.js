@@ -66,9 +66,7 @@ class TokenSwap extends React.Component {
             <p><strong>Collect your very own MGTOW Tokens today and start tipping!</strong></p>
             <p>Vending Machine Status: <i>Online</i></p>
             <p><img src={bchImage} width="150" height="150"/></p>
-            <p><i>Send any amount of Bitcoin Cash (BCH) to this address and receive MGTOW tokens in return in the very same wallet.</i></p>
-            <p><i>to this address and receive MGTOW tokens</i></p>
-            <p><i>in return in the very same wallet.</i></p>
+            <p><i>Send any amount of Bitcoin Cash (BCH)<br>to this address and receive MGTOW tokens<br>in return in the very same wallet.</i></p>
             </Box>
 
           </Col>
