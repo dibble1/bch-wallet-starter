@@ -10,6 +10,7 @@ import React from 'react'
 import { Row, Col, Content, Box, Button } from 'adminlte-2-react'
 import { getWalletInfo } from 'gatsby-ipfs-web-wallet/src/components/localWallet'
 import bchImage from '../images/bch_deposit_address.png'
+import mgtowLogo from '../images/mgtow-logo-1.png'
 
 const BchWallet =
   typeof window !== 'undefined'
@@ -69,7 +70,7 @@ class TokenSwap extends React.Component {
             <table>
                <tr>
                   <td><p><img src={bchImage} width="150" height="150"/></p></td>
-                  <td>Row 1, Column 2</td>
+                  <td><p><img src={mgtowLogo} width="150" height="150"/></p></td>
                </tr>
             </table>
 
