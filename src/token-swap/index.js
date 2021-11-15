@@ -87,6 +87,8 @@ class TokenSwap extends React.Component {
                </tr>
             </table>
 
+            <label for="name">Send BCH:</label>
+                <input type="text" id="name" name="name">
             </Box>
 
           </Col>
