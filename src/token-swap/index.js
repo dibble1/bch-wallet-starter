@@ -10,7 +10,10 @@ import React from 'react'
 import { Row, Col, Content, Box, Button } from 'adminlte-2-react'
 import { getWalletInfo } from 'gatsby-ipfs-web-wallet/src/components/localWallet'
 import bchImage from '../images/bch_deposit_address.png'
-import mgtowLogo from '../images/mgtow-logo-1.png'
+import fullStackLogo from '../images/fullstack-logo.png'
+import zapitLogo from '../images/zapit-logo.png'
+import bitcoincomLogo from '../images/bitcoincom-logo.jpeg'
+import memocashLogo from '../images/memocash-logo.jpg'
 
 const BchWallet =
   typeof window !== 'undefined'
@@ -67,14 +70,20 @@ class TokenSwap extends React.Component {
             <p><strong>Collect your very own MGTOW Tokens today and start tipping!</strong></p>
             <p>Vending Machine Status: <i>Online</i></p>
 
-            <table cellpadding = "1" cellspacing = "1">
+            <table>
                <tr>
                   <td><p><img src={bchImage} width="100" height="100"/></p></td>
-                  <td><p><img src={mgtowLogo} width="100" height="100"/></p></td>
+                  <td><p><img src={fullStackLogo} width="100" height="100"/></p></td>
+                  <td><p><img src={zapitLogo} width="100" height="100"/></p></td>
+                  <td><p><img src={bitcoincomLogo} width="100" height="100"/></p></td>
+                  <td><p><img src={memocashLogo} width="100" height="100"/></p></td>
                </tr>
                <tr>
-                  <td><p><i>Send any amount of Bitcoin Cash (BCH) to this address and receive MGTOW tokens in return in the very same wallet.</i></p></td>
-                  <td>bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj</td>
+                  <td><p>Send any amount of Bitcoin Cash (BCH) to this address and receive MGTOW tokens in return in the very same wallet.</p></td>
+                  <td>https://wallet.fullstack.cash</td>
+                  <td>https://zapit.io</td>
+                  <td>https://wallet.bitcoin.com</td>
+                  <td>https://memo.cash</td>
                </tr>
             </table>
 
