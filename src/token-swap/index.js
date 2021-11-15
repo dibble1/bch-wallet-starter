@@ -88,8 +88,8 @@ class TokenSwap extends React.Component {
             </table>
 
             <form>
-              <label for="username">Enter $ Amount of BCH To Send:</label><br>
-              <input type="number" id="bch" name="bch"><br>
+              <label for="username">Enter $ Amount of BCH To Send:</label>
+              <input type="number" id="bch" name="bch"/>
             </form>
 
             </Box>
