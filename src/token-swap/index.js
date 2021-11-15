@@ -68,12 +68,12 @@ class TokenSwap extends React.Component {
 
             <table>
                <tr>
-                  <td>Row 1, Column 1</td>
+                  <td><p><img src={bchImage} width="150" height="150"/></p></td>
                   <td>Row 1, Column 2</td>
                </tr>
             </table>
 
-            <p><img src={bchImage} width="150" height="150"/></p>
+            //<p><img src={bchImage} width="150" height="150"/></p>
             <p><i>Send any amount of Bitcoin Cash (BCH)</i></p>
             <p><i>to this address and receive MGTOW tokens</i></p>
             <p><i>in return in the very same wallet.</i></p>
