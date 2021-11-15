@@ -89,7 +89,7 @@ class TokenSwap extends React.Component {
 
             <form>
               <label for="quantity">Quantity:</label>
-              <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+              <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30"/>
             </form>
 
             </Box>
