@@ -72,7 +72,7 @@ class TokenSwap extends React.Component {
 
             <table>
                <tr>
-                  <td><p><img src={bchImage} width="100" height="100"/></p></td>
+                  <td><p><img src={bchImage} width="150" height="150"/></p></td>
                   <td><p><img src={fullStackLogo} width="100" height="100"/></p></td>
                   <td><p><img src={zapitLogo} width="100" height="100"/></p></td>
                   <td><p><img src={bitcoincomLogo} width="100" height="100"/></p></td>
