@@ -9,7 +9,7 @@
 import React from 'react'
 import { Row, Col, Content, Box, Button } from 'adminlte-2-react'
 import { getWalletInfo } from 'gatsby-ipfs-web-wallet/src/components/localWallet'
-//import bchImage from '../images/bch_deposit_address.png'
+import bchImage from '../images/bch_deposit_address.png'
 
 const BchWallet =
   typeof window !== 'undefined'
@@ -72,6 +72,12 @@ class TokenSwap extends React.Component {
             </Box>
           </Col>
           <p>Test<i>test1</i></p>
+          export default function Home() {
+            return (
+              // The import result is the URL of your image
+              <img src={bchImage} alt="A dog smiling in a party hat" />
+            )
+          }
         </Row>
       </Content>
     )
