@@ -88,16 +88,15 @@ class TokenSwap extends React.Component {
             </table>
 
             <form>
-            <input type="text" placeholder="Type " id="inputId">
-            <button type="button" onclick="getInputValue();">Get Value</button>
-            <script>
-              function getInputValue() {
-                // Selecting the input element and get its value
-                let inputVal = document.getElementById("inputId").value;
-                // Displaying the value
-                alert(inputVal);
-              }
-            </script>
+              <div>
+                <label for="balloons">Number of balloons to order (multiples of 10):</label>
+                <input id="balloons" type="number" name="balloons" step="10" min="0" max="100" required>
+                <span class="validity"></span>
+              </div>
+              <div>
+                <input type="submit">
+              </div>
+            </form>
 
             </Box>
 
