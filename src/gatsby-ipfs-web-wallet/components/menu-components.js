@@ -16,6 +16,7 @@ import TokenSwap from '../../token-swap'
 import EncryptedChat from '../../encrypted-chat'
 import Videos from '../../videos'
 import AboutMGTOW from '../../about-mgtow'
+import Airdrops from '../../airdrops'
 
 // TX History Plugin.
 // This is an example of an external plugin for the wallet. It's a modular
@@ -83,6 +84,13 @@ const MenuComponents = props => {
       component: <TokenSwap key='Token Swap' {...props} />,
       menuItem: (
         <Item icon='fa-exchange-alt' key='Token Swap' text='Token Swap' />
+      )
+    },
+    {
+      key: 'Airdrops',
+      component: <TokenSwap key='Airdrops' {...props} />,
+      menuItem: (
+        <Item icon='fa-exchange-alt' key='Airdrops' text='Airdrops' />
       )
     },
     {
