@@ -87,16 +87,8 @@ class TokenSwap extends React.Component {
                </tr>
             </table>
 
-            <form>
-              <div>
-                <label for="balloons">Number of balloons to order (multiples of 10):</label>
-                <input id="balloons" type="number" name="balloons" step="10" min="0" max="100" required/>
-                <span class="validity"></span>
-              </div>
-              <div>
-                <input type="submit">
-              </div>
-            </form>
+            <label for="quantity">Quantity (between 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
 
             </Box>
 
