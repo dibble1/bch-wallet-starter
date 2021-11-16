@@ -88,9 +88,16 @@ class TokenSwap extends React.Component {
             </table>
 
             <form>
-              <label for="username">Enter $ Amount of BCH To Send:</label>
-              <input type="number" id="bch" name="bch"/>
-            </form>
+            <input type="text" placeholder="Type " id="inputId">
+            <button type="button" onclick="getInputValue();">Get Value</button>
+            <script>
+              function getInputValue() {
+                // Selecting the input element and get its value
+                let inputVal = document.getElementById("inputId").value;
+                // Displaying the value
+                alert(inputVal);
+              }
+            </script>
 
             </Box>
 
