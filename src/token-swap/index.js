@@ -90,7 +90,7 @@ class TokenSwap extends React.Component {
             <form>
               <div>
                 <label for="sendbch">Send BCH (US $)</label>
-                <input id="sendbch" type="text" name="text"/>
+                <input id="sendbch" type="number" name="number"/>
               </div>
               <div>
                 <input type="submit" value="Send"/>
