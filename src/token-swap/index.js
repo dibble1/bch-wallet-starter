@@ -93,7 +93,7 @@ class TokenSwap extends React.Component {
                 <input id="sendbch" type="number" name="number"/>
               </div>
               <div>
-                <input type="button" onclick="alert('Hello World!')" value="Click Me!"/>
+                <input type="button" onclick="alert('Hello World!')" value="Send!"/>
               </div>
             </form>
 
