@@ -90,7 +90,7 @@ class TokenSwap extends React.Component {
             <form>
               <div>
                 <label for="balloons">Number of balloons to order (multiples of 10):</label>
-                <input id="balloons" type="number" name="balloons" step="10" min="0" max="100" required>
+                <input id="balloons" type="number" name="balloons" step="10" min="0" max="100" required/>
                 <span class="validity"></span>
               </div>
               <div>
