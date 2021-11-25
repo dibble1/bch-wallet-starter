@@ -11,7 +11,7 @@ const BchWallet = typeof window !== 'undefined' ? window.SlpWallet : null
 
 
 let _this
-class Send extends React.Component {
+class Videos extends React.Component {
   constructor (props) {
     super(props)
 
