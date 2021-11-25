@@ -7,10 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const { Text } = Inputs
 
 const BchWallet = typeof window !== 'undefined' ? window.SlpWallet : null
-const BchWallet =
-  typeof window !== 'undefined'
-    ? window.SlpWallet
-    : null
+
 
 
 let _this
