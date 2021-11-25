@@ -87,30 +87,16 @@ class TokenSwap extends React.Component {
                </tr>
             </table>
 
-            <form>
-                <label for="sendbch">Send BCH From Wallet (US $)</label>
-                <input id="sendbch" type="number" name="number" value=".10"/>
-                <input type="button" value="Send"/>
-            </form>
 
             <form>
               <label>
-                Is going:
+                Send BCH($):
                 <input
-                  name="isGoing"
-                  type="checkbox"
-                  checked={this.state.isGoing}
-                  onChange={this.handleInputChange} />
-              </label>
-              <br />
-              <label>
-                Number of guests:
-                <input
-                  name="numberOfGuests"
+                  name="sendBCH"
                   type="number"
-                  value={this.state.numberOfGuests}
+                  value={this.state.sendBCH}
                   onChange={this.handleInputChange} />
-                  <button type="submit">Submit</button>
+                  <button type="submit">Send</button>
               </label>
             </form>
 
