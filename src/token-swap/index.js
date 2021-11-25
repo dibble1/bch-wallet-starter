@@ -87,11 +87,25 @@ class TokenSwap extends React.Component {
                </tr>
             </table>
 
-            <form action="../videos/index.js" method="post" target="_blank">
-                <label for="sendbch">Send BCH From Wallet (US $)</label>
-                <input id="sendbch" type="number" name="number" value=".10"/>
-                <input type="button" value="Send"/>
-            </form>
+            <h2>Text value property</h2>
+               <p>
+                   Change the text of the text field,
+                   and then click the button below.
+               </p>
+
+               Name:<input type="text" id="myText" value="Mickey">
+               <button type="button" onclick="myFunction()">Try it</button>
+               <p id="demo"></p>
+
+
+               <script>
+
+               // Here the value is stored in new variable x
+               function myFunction() {
+                   var x = document.getElementById("myText").value;
+                   document.getElementById("demo").innerHTML = x;
+               }
+               </script>
 
             </Box>
 
