@@ -102,6 +102,19 @@ class TokenSwap extends React.Component {
               </label>
             </form>
 
+        <Wallet {...this.props} importComponents={this.addCards()} />
+
+        addCards () {
+          return (
+            <>
+              <TXHistory
+                walletInfo={this.props.walletInfo}
+                bchWallet={this.props.bchWallet}
+              />
+            </>
+          )
+        }
+
             </Box>
 
           </Col>
