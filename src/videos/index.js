@@ -43,7 +43,7 @@ class Videos extends React.Component {
               type='primary'
               closable
               collapsable
-              loaded={!inFetch}
+              //loaded={!inFetch}
             >
 
 
