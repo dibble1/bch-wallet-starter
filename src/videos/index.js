@@ -62,7 +62,15 @@ class Videos extends React.Component {
               //}
             >
 
+              {
+                isChecked &&
+                  <div>
+                    <p>Confirmed: {confirmedBalance}</p>
+                    <p>Unconfirmed: {unconfirmedBalance}</p>
+                    <p>Total : <strong>{totalBalance}</strong></p>
+                  </div>
 
+              }
 
             </Box>
           </Col>
@@ -71,5 +79,7 @@ class Videos extends React.Component {
     )
   }
 
+
+}
 
 export default Videos
