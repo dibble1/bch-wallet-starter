@@ -15,16 +15,7 @@ const BchWallet =
     ? window.SlpWallet
     : null
 
-let _this
-class Videos extends React.Component {
-  constructor (props) {
-    super(props)
-    _this = this
-    this.state = {
-      test: 0
 
-    }
-  }
 
   render () {
     const {
