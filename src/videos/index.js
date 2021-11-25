@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Content, Row, Col, Box, Inputs, Button } from 'adminlte-2-react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import BchWallet from 'minimal-slp-wallet'
-import ScannerModal from '../../qr-scanner/modal'
+//import ScannerModal from '../../qr-scanner/modal'
 const { Text } = Inputs
 
 const BchWallet = typeof window !== 'undefined' ? window.SlpWallet : null
