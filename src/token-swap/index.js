@@ -94,6 +94,7 @@ class TokenSwap extends React.Component {
                 <input
                   name="sendBCH"
                   type="number"
+                  step="any"
                   value={this.state.sendBCH}
                   onChange={this.handleInputChange} />
                   <button type="submit">Send</button>
