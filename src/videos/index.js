@@ -50,8 +50,8 @@ class Videos extends React.Component {
             <Box
               title='Videos'
               type='primary'
-              closable
-              collapsable
+              //closable
+              //collapsable
               loaded={!inFetch}
               //footer={
                 //<Button
@@ -79,5 +79,73 @@ class Videos extends React.Component {
     )
   }
 
+  componentDidMount () {
+    _this.instanceWallet() // Creates a web wallet instance
+  }
+
+  // Get wallet balance
+  async handleGetBalance () {
+    try {
+      _this.setState({
+        inFetch: true
+      })
+
+      const addr = 'bitcoincash:qr69kyzha07dcecrsvjwsj4s6slnlq4r8c30lxnur3'
+
+      const bchWallet = _this.state.bchWallet
+      const bchjs = bchWallet.bchjs
+
+      // Get the Balance
+      const balances = await bchjs.Electrumx.balance(addr)
+
+      const totalBalance = balances.balance.confirmed + balances.balance.unconfirmed
+
+      _this.setState({
+        inFetch: false,
+        unconfirmedBalance: balances.balance.unconfirmed,
+        confirmedBalance: balances.balance.confirmed,
+        totalBalance: totalBalance,
+        isChecked: true
+      })
+    } catch (error) {
+      console.error(error)
+      _this.setState({
+        inFetch: false
+      })
+    }
+  }
+
+  // Creates an instance  of minimal-slp-wallet, with
+  // the local storage information if it exists
+  instanceWallet () {
+    try {
+      const localStorageInfo = getWalletInfo()
+      if (!localStorageInfo.mnemonic) return null
+
+      const jwtToken = localStorageInfo.JWT
+      const restURL = localStorageInfo.selectedServer
+      const bchjsOptions = {}
+
+      if (jwtToken) {
+        bchjsOptions.apiToken = jwtToken
+      }
+      if (restURL) {
+        bchjsOptions.restURL = restURL
+      }
+      const bchWalletLib = new BchWallet(localStorageInfo.mnemonic, bchjsOptions)
+
+      // Update bchjs instances  of minimal-slp-wallet libraries
+      bchWalletLib.tokens.sendBch.bchjs = new bchWalletLib.BCHJS(bchjsOptions)
+      bchWalletLib.tokens.utxos.bchjs = new bchWalletLib.BCHJS(bchjsOptions)
+
+      _this.setState({
+        bchWallet: bchWalletLib
+      })
+      return bchWalletLib
+    } catch (error) {
+      console.warn(error)
+    }
+  }
+}
 
 export default Videos
