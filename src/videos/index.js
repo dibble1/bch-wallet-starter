@@ -510,4 +510,4 @@ Send.propTypes = {
   currentRate: PropTypes.number
 }
 
-export default Videos
+export default Send
