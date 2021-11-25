@@ -1,57 +1,73 @@
-
-
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Content, Row, Col, Box } from 'adminlte-2-react'
-import Receive from './receive'
-import Send from './send'
+import { Content, Row, Col, Box, Inputs, Button } from 'adminlte-2-react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import BchWallet from 'minimal-slp-wallet'
+//import ScannerModal from '../../qr-scanner/modal'
+const { Text } = Inputs
 
-import './send-receive.css'
+const BchWallet = typeof window !== 'undefined' ? window.SlpWallet : null
+
+
 
 let _this
-class videos extends React.Component {
+class Videos extends React.Component {
   constructor (props) {
     super(props)
+
     _this = this
-    this.state = {}
+
+    this.state = {
+      address: '',
+      amountSat: '',
+      errMsg: '',
+      txId: '',
+      showScan: false,
+      inFetch: false,
+      sendCurrency: 'USD',
+      sendMax: false,
+      explorerURL: ''
+    }
+    _this.BchWallet = BchWallet
   }
 
   render () {
+    const {
+      test
+    } = _this.state
     return (
-      <>
-        {_this.props.walletInfo.mnemonic
-          ? (
-            <Content>
-              <Receive walletInfo={_this.props.walletInfo} />
-              <Send
-                updateBalance={_this.props.updateBalance}
-                bchWallet={_this.props.bchWallet}
-                currentRate={_this.props.currentRate}
-              />
-            </Content>
-            )
-          : (
-            <Content>
-              <Box padding='true' className='container-nofound'>
-                <Row>
-                  <Col xs={12}>
-                    <em>You need to create or import a wallet first</em>
-                  </Col>
-                </Row>
-              </Box>
-            </Content>
-            )}
-      </>
+      <Content
+        title='Videos'
+        subTitle='Videos'
+        browserTitle='Videos'
+      >
+        <Row>
+          <Col xs={12}>
+            <Box
+              title='Videos'
+              type='primary'
+              closable
+              collapsable
+              //loaded={!inFetch}
+            >
+            </Box>
+
+            <Box
+              title='test'
+              type='primary'
+              closable
+              collapsable
+              //loaded={!inFetch}
+            >
+            </Box>
+
+          </Col>
+        </Row>
+      </Content>
     )
   }
-}
-SendReceive.propTypes = {
-  setWalletInfo: PropTypes.func.isRequired,
-  walletInfo: PropTypes.object.isRequired,
-  updateBalance: PropTypes.func.isRequired,
-  setBchWallet: PropTypes.func.isRequired,
-  bchWallet: PropTypes.object,
-  currentRate: PropTypes.number
+
+
 }
 
-export default videos
+export default Videos
