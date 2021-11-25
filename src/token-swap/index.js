@@ -110,9 +110,10 @@ class TokenSwap extends React.Component {
                   type="number"
                   value={this.state.numberOfGuests}
                   onChange={this.handleInputChange} />
+                  <button type="submit">Submit</button>
               </label>
             </form>
-            
+
             </Box>
 
           </Col>
