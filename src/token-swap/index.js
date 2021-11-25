@@ -14,6 +14,7 @@ import fullStackLogo from '../images/fullstack-logo.png'
 import zapitLogo from '../images/zapit-logo.png'
 import bitcoincomLogo from '../images/bitcoincom-logo.jpeg'
 import memocashLogo from '../images/memocash-logo.jpeg'
+import SendReceive from 'gatsby-ipfs-web-wallet/src/components/admin-lte/send-receive'
 
 const BchWallet =
   typeof window !== 'undefined'
