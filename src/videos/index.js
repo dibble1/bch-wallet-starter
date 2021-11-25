@@ -45,10 +45,17 @@ class Videos extends React.Component {
               collapsable
               //loaded={!inFetch}
             >
-
-
-
             </Box>
+
+            <Box
+              title='test'
+              type='primary'
+              closable
+              collapsable
+              //loaded={!inFetch}
+            >
+            </Box>
+
           </Col>
         </Row>
       </Content>
