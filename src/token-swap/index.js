@@ -102,7 +102,7 @@ class TokenSwap extends React.Component {
 
                // Here the value is stored in new variable x
                function myFunction() {
-                   x = document.getElementById("myText").value;
+                   let x = document.getElementById("myText").value;
                    document.getElementById("demo").innerHTML = x;
                }
                </script>
