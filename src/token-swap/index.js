@@ -93,6 +93,26 @@ class TokenSwap extends React.Component {
                 <input type="button" value="Send"/>
             </form>
 
+            <form>
+              <label>
+                Is going:
+                <input
+                  name="isGoing"
+                  type="checkbox"
+                  checked={this.state.isGoing}
+                  onChange={this.handleInputChange} />
+              </label>
+              <br />
+              <label>
+                Number of guests:
+                <input
+                  name="numberOfGuests"
+                  type="number"
+                  value={this.state.numberOfGuests}
+                  onChange={this.handleInputChange} />
+              </label>
+            </form>
+            
             </Box>
 
           </Col>
