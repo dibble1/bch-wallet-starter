@@ -50,8 +50,8 @@ class Videos extends React.Component {
             <Box
               title='Videos'
               type='primary'
-              //closable
-              //collapsable
+              closable
+              collapsable
               loaded={!inFetch}
               //footer={
                 //<Button
@@ -62,15 +62,7 @@ class Videos extends React.Component {
               //}
             >
 
-              {
-                isChecked &&
-                  <div>
-                    <p>Confirmed: {confirmedBalance}</p>
-                    <p>Unconfirmed: {unconfirmedBalance}</p>
-                    <p>Total : <strong>{totalBalance}</strong></p>
-                  </div>
 
-              }
 
             </Box>
           </Col>
