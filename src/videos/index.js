@@ -20,25 +20,12 @@ class Videos extends React.Component {
   constructor (props) {
     super(props)
     _this = this
-    this.state = {
-      unconfirmedBalance: 0,
-      confirmedBalance: 0,
-      totalBalance: 0,
-      inFetch: false,
-      bchWallet: '',
-      isChecked: ''
 
     }
   }
 
   render () {
-    const {
-      unconfirmedBalance,
-      confirmedBalance,
-      totalBalance,
-      inFetch,
-      isChecked
-    } = _this.state
+
     return (
       <Content
         title='Videos'
@@ -53,13 +40,6 @@ class Videos extends React.Component {
               closable
               collapsable
               loaded={!inFetch}
-              //footer={
-                //<Button
-                //  type='primary'
-                //  text='Check Balance'
-                //  onClick={_this.handleGetBalance}
-                ///>
-              //}
             >
 
 
