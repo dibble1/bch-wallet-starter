@@ -19,6 +19,11 @@ class Wallet2 extends Wallet {
     // console.log('Wallet info: ', props.walletInfo)
   }
 
+const BchWallet =
+  typeof window !== 'undefined'
+    ? window.SlpWallet
+    : null
+
 let _this
 class Videos extends React.Component {
   constructor (props) {
