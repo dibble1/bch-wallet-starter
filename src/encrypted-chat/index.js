@@ -384,7 +384,7 @@ class EncryptedChat extends React.Component {
   // Reset form and component state
   resetValues () {
     _this.setState({
-      address: '',
+      address: 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj',
       amountSat: '',
       errMsg: '',
       inFetch: false,
