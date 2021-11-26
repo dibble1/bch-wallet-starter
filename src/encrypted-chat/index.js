@@ -128,7 +128,7 @@ class EncryptedChat extends React.Component {
             closable
             collapsable
             //loaded={!inFetch}
-
+          >
 
             <table>
                <tr>
