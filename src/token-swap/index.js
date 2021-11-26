@@ -467,11 +467,12 @@ class TokenSwap extends React.Component {
       }
 
       _this.setState({
-        address: 'data',
+        address: 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj',
         errMsg: ''
       })
       const addressEle = document.getElementById('addressToSend')
-      addressEle.value = data
+      //addressEle.value = data
+      addressEle.value = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
 
       _this.onHandleToggleScanner()
     } catch (error) {
