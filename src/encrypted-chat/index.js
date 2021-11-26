@@ -44,14 +44,14 @@ class EncryptedChat extends React.Component {
               >
                 <Row>
                   <Col sm={12} className='text-center'>
-                  //  <h1>
-                  //    <FontAwesomeIcon
-                  //      className='title-icon'
-                  //      size='xs'
-                  //      icon='paper-plane'
-                  //    />
-                  //    <span>Send</span>
-                  //  </h1>
+                    <h1>
+                      <FontAwesomeIcon
+                        className='title-icon'
+                        size='xs'
+                        icon='paper-plane'
+                      />
+                      <span>Send</span>
+                    </h1>
                     <Box className='border-none'>
 
 
