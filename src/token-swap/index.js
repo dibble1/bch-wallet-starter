@@ -521,4 +521,4 @@ TokenSwap.propTypes = {
   currentRate: PropTypes.number
 }
 
-export default TokenSWap
+export default TokenSwap
