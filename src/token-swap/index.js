@@ -111,4 +111,6 @@ class TokenSwap extends React.Component {
   }
 
 
+}
+
 export default TokenSwap
