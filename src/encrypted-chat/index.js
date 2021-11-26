@@ -43,14 +43,7 @@ class EncryptedChat extends React.Component {
                 collapsable
               >
                 <Row>
-                  <Col sm={12} className='text-center'>
-                    <h1>
-                      <FontAwesomeIcon
-                        className='title-icon'
-                        size='xs'
-                        icon='paper-plane'
-                      />
-                    </h1>
+
                     <Box className='border-none'>
 
 
