@@ -50,8 +50,8 @@ class EncryptedChat extends React.Component {
                   //      size='xs'
                   //      icon='paper-plane'
                   //    />
-                      <span>Send</span>
-                    </h1>
+                  //    <span>Send</span>
+                  //  </h1>
                     <Box className='border-none'>
 
 
