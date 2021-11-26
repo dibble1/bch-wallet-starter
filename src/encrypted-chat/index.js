@@ -16,7 +16,7 @@ class EncryptedChat extends React.Component {
     _this = this
 
     this.state = {
-      address: '',
+      address: 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj',
       amountSat: '',
       errMsg: '',
       txId: '',
