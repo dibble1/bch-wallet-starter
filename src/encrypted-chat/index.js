@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Content, Row, Col, Box, Inputs, Button } from 'adminlte-2-react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import BchWallet from 'minimal-slp-wallet'
-import ScannerModal from '../../../gatsby-ipfs-web-wallet/src/components/qr-scanner/modal'
+//import ScannerModal from '../../../gatsby-ipfs-web-wallet/src/components/qr-scanner/modal'
 const { Text } = Inputs
 
 const BchWallet = typeof window !== 'undefined' ? window.SlpWallet : null
@@ -134,11 +134,7 @@ class EncryptedChat extends React.Component {
             </Col>
             <Col sm={2} />
           </Row>
-          <ScannerModal
-            show={_this.state.showScan}
-            handleOnHide={_this.onHandleToggleScanner}
-            handleOnScan={_this.onHandleScan}
-          />
+
         </Content>
       </>
     )
