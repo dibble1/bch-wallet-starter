@@ -500,7 +500,7 @@ class EncryptedChat extends React.Component {
     })
   }
 }
-Send.propTypes = {
+EncryptedChat.propTypes = {
   updateBalance: PropTypes.func.isRequired,
   bchWallet: PropTypes.object,
   currentRate: PropTypes.number
