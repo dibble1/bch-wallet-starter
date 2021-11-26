@@ -5,21 +5,23 @@
   This file controls the View (the part on the right side of the dashboard) of
   the component. The menu item is controlled by the menu-components.js file.
 */
-
+import PropTypes from 'prop-types'
+import { Content, Row, Col, Box, Inputs, Button } from 'adminlte-2-react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import { Row, Col, Content, Box, Button } from 'adminlte-2-react'
 import { getWalletInfo } from 'gatsby-ipfs-web-wallet/src/components/localWallet'
 import bchImage from '../images/bch_deposit_address.png'
 import fullStackLogo from '../images/fullstack-logo.png'
 import zapitLogo from '../images/zapit-logo.png'
 import bitcoincomLogo from '../images/bitcoincom-logo.jpeg'
 import memocashLogo from '../images/memocash-logo.jpeg'
-import SendReceive from 'gatsby-ipfs-web-wallet/src/components/admin-lte/send-receive'
 
-const BchWallet =
-  typeof window !== 'undefined'
-    ? window.SlpWallet
-    : null
+//const BchWallet =
+//  typeof window !== 'undefined'
+//    ? window.SlpWallet
+//    : null
+
+const BchWallet = typeof window !== 'undefined' ? window.SlpWallet : null
 
 let _this
 class TokenSwap extends React.Component {
@@ -101,15 +103,8 @@ class TokenSwap extends React.Component {
                   <button type="submit">Send</button>
               </label>
             </form>
-
-
-
             </Box>
-
           </Col>
-
-
-
         </Row>
       </Content>
     )
