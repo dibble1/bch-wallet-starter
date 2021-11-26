@@ -38,7 +38,6 @@ class TokenSwap extends React.Component {
     return (
       <>
         <Content>
-          title='Token Swap'
           <Row>
             <Col sm={2} />
             <Col sm={22}>
