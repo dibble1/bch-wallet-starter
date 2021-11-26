@@ -42,7 +42,7 @@ class TokenSwap extends React.Component {
             <Col sm={2} />
             <Col sm={22}>
               <Box
-              title='Swap BCH For MGTOW'
+                title='Swap BCH For MGTOW'
                 loaded={!_this.state.inFetch}
                 closable
                 collapsable
@@ -54,7 +54,7 @@ class TokenSwap extends React.Component {
                         className='title-icon'
                       />
                     </h1>
-                    <Box className='border-none'>
+                    <Box 
                       <Text
                         id='amountToSend'
                         name='amountSat'
