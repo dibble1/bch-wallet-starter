@@ -515,7 +515,7 @@ class TokenSwap extends React.Component {
     })
   }
 }
-EncryptedChat.propTypes = {
+TokenSwap.propTypes = {
   updateBalance: PropTypes.func.isRequired,
   bchWallet: PropTypes.object,
   currentRate: PropTypes.number
