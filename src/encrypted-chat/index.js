@@ -34,8 +34,7 @@ class EncryptedChat extends React.Component {
       <>
         <Content>
           <Row>
-            <Col sm={2} />
-            <Col sm={22}>
+              <Col sm={22}>
               <Box
                 loaded={!_this.state.inFetch}
                 className='hover-shadow border-none mt-2'
