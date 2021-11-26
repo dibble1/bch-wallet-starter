@@ -43,7 +43,6 @@ class EncryptedChat extends React.Component {
             <Col sm={22}>
               <Box
                 loaded={!_this.state.inFetch}
-
                 closable
                 collapsable
               >
@@ -129,6 +128,25 @@ class EncryptedChat extends React.Component {
             closable
             collapsable
             //loaded={!inFetch}
+            <p><strong>Collect your very own MGTOW Tokens today and start tipping!</strong></p>
+            <p>Vending Machine Status: <i>Online</i></p>
+
+            <table>
+               <tr>
+                  <td><p><img src={bchImage} width="150" height="150"/></p></td>
+                  <td><p><img src={fullStackLogo} width="100" height="100"/></p></td>
+                  <td><p><img src={zapitLogo} width="100" height="100"/></p></td>
+                  <td><p><img src={bitcoincomLogo} width="100" height="100"/></p></td>
+                  <td><p><img src={memocashLogo} width="100" height="100"/></p></td>
+               </tr>
+               <tr>
+                  <td><p>Send any amount of Bitcoin Cash (BCH) to this address and receive MGTOW tokens in return in the very same wallet.</p></td>
+                  <td>https://wallet.fullstack.cash</td>
+                  <td>https://zapit.io</td>
+                  <td>https://wallet.bitcoin.com</td>
+                  <td>https://memo.cash</td>
+               </tr>
+            </table>
           >
           </Box>
 
