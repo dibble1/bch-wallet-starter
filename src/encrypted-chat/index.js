@@ -43,7 +43,7 @@ class EncryptedChat extends React.Component {
             <Col sm={22}>
               <Box
                 loaded={!_this.state.inFetch}
-                className='hover-shadow border-none mt-2'
+
                 closable
                 collapsable
               >
