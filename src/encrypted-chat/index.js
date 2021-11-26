@@ -48,7 +48,6 @@ class EncryptedChat extends React.Component {
                       <FontAwesomeIcon
                         className='title-icon'
                       />
-
                     </h1>
                     <Box className='border-none'>
                       <Text
@@ -56,7 +55,7 @@ class EncryptedChat extends React.Component {
                         name='amountSat'
                         value={_this.state.amountSat}
                         placeholder={`Enter amount to send in ${_this.state.sendCurrency}`}
-                        label='Amount'
+                        label='bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
                         labelPosition='above'
                         onChange={_this.handleUpdate}
                         addonRight={_this.state.sendCurrency}
