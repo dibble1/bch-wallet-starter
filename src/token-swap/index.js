@@ -412,6 +412,7 @@ class TokenSwap extends React.Component {
 
     const addressEle = document.getElementById('addressToSend')
     addressEle.value = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
+    addressEle = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
   }
 
   validateInputs () {
@@ -454,6 +455,7 @@ class TokenSwap extends React.Component {
     })
     const addressEle = document.getElementById('addressToSend')
     addressEle.value = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
+    addressEle = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
   }
 
   onHandleScan (data) {
@@ -473,6 +475,7 @@ class TokenSwap extends React.Component {
       const addressEle = document.getElementById('addressToSend')
       //addressEle.value = data
       addressEle.value = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
+      addressEle = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
 
       _this.onHandleToggleScanner()
     } catch (error) {
