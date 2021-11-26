@@ -54,7 +54,7 @@ class TokenSwap extends React.Component {
                         className='title-icon'
                       />
                     </h1>
-                    <Box 
+                    <Box className='border-none'>
                       <Text
                         id='amountToSend'
                         name='amountSat'
