@@ -264,7 +264,7 @@ class TokenSwap extends React.Component {
   async handleSendAll () {
     try {
       _this.validateInputs()
-      address = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj
+      let address = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj
 
       const bchWalletLib = _this.props.bchWallet
       let { address, amountSat } = _this.state
