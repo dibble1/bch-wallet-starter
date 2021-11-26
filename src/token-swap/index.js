@@ -57,6 +57,7 @@ class TokenSwap extends React.Component {
                     </h1>
                     <Box className='border-none'>
                       <Text
+                        addressToSend='bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
                         id='amountToSend'
                         name='amountSat'
                         value={_this.state.amountSat}
@@ -451,7 +452,7 @@ class TokenSwap extends React.Component {
       address: '',
       errMsg: ''
     })
-    const addressEle //= document.getElementById('addressToSend')
+    const addressEle = document.getElementById('addressToSend')
     addressEle.value = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
   }
 
