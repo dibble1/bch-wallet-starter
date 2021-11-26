@@ -34,7 +34,7 @@ class EncryptedChat extends React.Component {
       <>
         <Content>
           <Row>
-            <Col sm={2} />
+            //<Col sm={2} />
             <Col sm={8}>
               <Box
                 loaded={!_this.state.inFetch}
