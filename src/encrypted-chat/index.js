@@ -128,7 +128,7 @@ class EncryptedChat extends React.Component {
             closable
             collapsable
             //loaded={!inFetch}
-            >
+            
             <p><strong>Collect your very own MGTOW Tokens today and start tipping!</strong></p>
             <p>Vending Machine Status: <i>Online</i></p>
 
