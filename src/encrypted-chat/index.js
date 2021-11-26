@@ -2,6 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Content, Row, Col, Box, Inputs, Button } from 'adminlte-2-react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import bchImage from '../images/bch_deposit_address.png'
+import fullStackLogo from '../images/fullstack-logo.png'
+import zapitLogo from '../images/zapit-logo.png'
+import bitcoincomLogo from '../images/bitcoincom-logo.jpeg'
+import memocashLogo from '../images/memocash-logo.jpeg'
 // import BchWallet from 'minimal-slp-wallet'
 //import ScannerModal from '../../../gatsby-ipfs-web-wallet/src/components/qr-scanner/modal'
 const { Text } = Inputs
@@ -117,6 +122,15 @@ class EncryptedChat extends React.Component {
             </Col>
             <Col sm={2} />
           </Row>
+
+          <Box
+            title='test'
+            type='primary'
+            closable
+            collapsable
+            //loaded={!inFetch}
+          >
+          </Box>
 
         </Content>
       </>
