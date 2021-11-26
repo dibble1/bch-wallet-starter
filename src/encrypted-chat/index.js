@@ -9,6 +9,7 @@
 import React from 'react'
 import { Row, Col, Content, Box, Button } from 'adminlte-2-react'
 import { getWalletInfo } from 'gatsby-ipfs-web-wallet/src/components/localWallet'
+import send-receive from 'gatsby-ipfs-web-wallet/src/components/admin-lte/send-receive'
 
 const BchWallet =
   typeof window !== 'undefined'
