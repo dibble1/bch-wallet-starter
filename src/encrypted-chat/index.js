@@ -47,10 +47,8 @@ class EncryptedChat extends React.Component {
                     <h1>
                       <FontAwesomeIcon
                         className='title-icon'
-                        size='xs'
-                        icon='paper-plane'
                       />
-                      <span>Send</span>
+
                     </h1>
                     <Box className='border-none'>
                       <Text
