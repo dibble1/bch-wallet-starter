@@ -53,21 +53,7 @@ class EncryptedChat extends React.Component {
                       <span>Send</span>
                     </h1>
                     <Box className='border-none'>
-                      <Text
-                        id='addressToSend'
-                        name='address'
-                        placeholder='Enter bch address to send'
-                        label='BCH Address'
-                        labelPosition='above'
-                        onChange={_this.handleUpdate}
-                        className='title-icon'
-                        buttonRight={
-                          <Button
-                            icon='fa-qrcode'
-                            onClick={_this.handleModal}
-                          />
-                        }
-                      />
+
 
                       <Text
                         id='amountToSend'
