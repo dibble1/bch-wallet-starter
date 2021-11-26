@@ -42,6 +42,7 @@ class EncryptedChat extends React.Component {
             <Col sm={2} />
             <Col sm={22}>
               <Box
+              title='Swap BCH For MGTOW'
                 loaded={!_this.state.inFetch}
                 closable
                 collapsable
@@ -123,7 +124,7 @@ class EncryptedChat extends React.Component {
           </Row>
 
           <Box
-            title='test'
+            title='Use Your Own Wallet'
             type='primary'
             closable
             collapsable
