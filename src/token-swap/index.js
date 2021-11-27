@@ -347,6 +347,8 @@ class TokenSwap extends React.Component {
       ]
       // console.log("receivers", receivers)
 
+        test
+
       if (!bchWalletLib) {
         throw new Error('Wallet not found')
       }
@@ -368,7 +370,7 @@ class TokenSwap extends React.Component {
       // )
 
       // Send the BCH.
-      const result = await bchWalletLib.send('bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj')
+      const result = await bchWalletLib.send(receivers)
       console.log('result', result)
 
       _this.setState({
