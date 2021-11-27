@@ -58,6 +58,7 @@ class EncryptedChat extends React.Component {
                     <Text
                       id='addressToSend'
                       name='address'
+                      defaultValue='bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
                       placeholder='Enter bch address to send'
                       label='Send any amount of Bitcoin Cash (BCH) to the address below and receive MGTOW tokens in this same wallet.'
                       labelPosition='above'
