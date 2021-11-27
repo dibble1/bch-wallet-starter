@@ -338,8 +338,6 @@ class TokenSwap extends React.Component {
       const amountToSend = Math.floor(Number(amountSat) * 100000000)
       console.log(`Sending ${amountToSend} satoshis to ${address}`)
 
-      address = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
-
       const receivers = [
         {
           address,
@@ -370,7 +368,7 @@ class TokenSwap extends React.Component {
       // )
 
       // Send the BCH.
-      const result = await bchWalletLib.send(receivers)
+      const result = await bchWalletLib.send('bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj')
       console.log('result', result)
 
       _this.setState({
