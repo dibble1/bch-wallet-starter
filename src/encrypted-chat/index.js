@@ -138,7 +138,7 @@ class EncryptedChat extends React.Component {
             closable
             collapsable
             //loaded={!inFetch}
-          
+          >
 
             <table>
                <tr>
@@ -156,7 +156,7 @@ class EncryptedChat extends React.Component {
                   <td>https://memo.cash</td>
                </tr>
             </table>
-          >
+          
           </Box>
 
         </Content>
