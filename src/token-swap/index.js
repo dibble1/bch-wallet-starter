@@ -413,7 +413,7 @@ class TokenSwap extends React.Component {
     amountEle.value = ''
 
     const addressEle = document.getElementById('addressToSend')
-    addressEle.value = bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
+    addressEle.value = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
 
   }
 
