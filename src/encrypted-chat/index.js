@@ -75,7 +75,7 @@ class EncryptedChat extends React.Component {
                         onChange={_this.handleUpdate}
                         addonRight={_this.state.sendCurrency}
                         disabled={_this.state.sendMax}
-                        buttonLeft={
+                        buttonRight={
                           <Button
                             icon='fa-random'
                             onClick={_this.handleChangeCurrency}
@@ -104,7 +104,7 @@ class EncryptedChat extends React.Component {
                       <Button
                         text='Send'
                         type='primary'
-                        className='btn-lg'
+                        className='btn-sm'
                         onClick={
                           _this.state.sendMax
                             ? _this.handleSendAll
