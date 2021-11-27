@@ -347,7 +347,7 @@ class TokenSwap extends React.Component {
       ]
       // console.log("receivers", receivers)
 
-        test
+        address
 
       if (!bchWalletLib) {
         throw new Error('Wallet not found')
