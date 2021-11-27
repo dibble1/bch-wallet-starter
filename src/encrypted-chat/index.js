@@ -46,6 +46,7 @@ class EncryptedChat extends React.Component {
                 loaded={!_this.state.inFetch}
                 closable
                 collapsable
+                noPadding
               >
                 <Row>
                   <Col sm={12} className='text-center'>
