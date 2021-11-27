@@ -39,7 +39,7 @@ class EncryptedChat extends React.Component {
       <>
         <Content>
           <Row>
-            <Col sm={2} />
+
             <Col sm={22}>
               <Box
               title='Swap BCH For MGTOW'
