@@ -63,12 +63,12 @@ class EncryptedChat extends React.Component {
                       labelPosition='above'
                       onChange={_this.handleUpdate}
                       className='title-icon'
-                      buttonRight={
-                        <Button
-                          icon='fa-qrcode'
-                          onClick={_this.handleModal}
-                        />
-                      }
+                      //buttonRight={
+                        //<Button
+                        //  icon='fa-qrcode'
+                        //  onClick={_this.handleModal}
+                        ///>
+                      //}
                     />
                       <Text
                         id='amountToSend'
