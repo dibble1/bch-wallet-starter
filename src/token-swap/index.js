@@ -42,27 +42,35 @@ class TokenSwap extends React.Component {
             <Col sm={2} />
             <Col sm={22}>
               <Box
-                title='Swap BCH For MGTOW'
-                type='primary'
+              title='Swap BCH For MGTOW'
                 loaded={!_this.state.inFetch}
                 closable
                 collapsable
+                noPadding
               >
                 <Row>
                   <Col sm={12} className='text-center'>
                     <h1>
                       <FontAwesomeIcon
                         className='title-icon'
-                      />
+                     />
                     </h1>
                     <Box className='border-none'>
+                    <Text
+                      id='addressToSend'
+                      name='address'
+                      defaultValue='bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
+                      placeholder='bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
+                      label='Send any amount of Bitcoin Cash (BCH) to the address below and receive MGTOW tokens in this same wallet.'
+                      labelPosition='above'
+                      onChange={_this.handleUpdate}
+                      //className='title-icon'
+                    />
                       <Text
-                        addressToSend='bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
                         id='amountToSend'
                         name='amountSat'
                         value={_this.state.amountSat}
                         placeholder={`Enter amount to send in ${_this.state.sendCurrency}`}
-                        label='bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
                         labelPosition='above'
                         onChange={_this.handleUpdate}
                         addonRight={_this.state.sendCurrency}
@@ -96,7 +104,7 @@ class TokenSwap extends React.Component {
                       <Button
                         text='Send'
                         type='primary'
-                        className='btn-lg'
+                        className='btn-sm'
                         onClick={
                           _this.state.sendMax
                             ? _this.handleSendAll
@@ -345,7 +353,7 @@ class TokenSwap extends React.Component {
           amountSat: amountToSend
         }
       ]
-      //console.log("receivers", receivers)
+      // console.log("receivers", receivers)
 
       if (!bchWalletLib) {
         throw new Error('Wallet not found')
@@ -410,9 +418,8 @@ class TokenSwap extends React.Component {
     const amountEle = document.getElementById('amountToSend')
     amountEle.value = ''
 
-    const addressEle = document.getElementById('addressToSend').defaultValue = "bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj"
-    addressEle.value = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
-
+    const addressEle = document.getElementById('addressToSend')
+    addressEle.value = ''
   }
 
   validateInputs () {
@@ -450,11 +457,11 @@ class TokenSwap extends React.Component {
 
   resetAddressValue () {
     _this.setState({
-      address: 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj',
+      address: '',
       errMsg: ''
     })
-    const addressEle = document.getElementById('addressToSend').defaultValue = "bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj"
-    addressEle.value = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
+    const addressEle = document.getElementById('addressToSend')
+    addressEle.value = ''
   }
 
   onHandleScan (data) {
@@ -468,12 +475,11 @@ class TokenSwap extends React.Component {
       }
 
       _this.setState({
-        address: 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj',
+        address: data,
         errMsg: ''
       })
       const addressEle = document.getElementById('addressToSend')
-      //addressEle.value = data
-      addressEle.value = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
+      addressEle.value = data
 
       _this.onHandleToggleScanner()
     } catch (error) {
