@@ -99,17 +99,18 @@ class EncryptedChat extends React.Component {
                                 (_this.props.currentRate / 100)
                               ).toFixed(8)}`}
                         </p>
+                        <Button
+                          text='Send'
+                          type='primary'
+                          className='btn-sm'
+                          onClick={
+                            _this.state.sendMax
+                              ? _this.handleSendAll
+                              : _this.handleSend
+                          }
+                        />
                       </div>
-                      <Button
-                        text='Send'
-                        type='primary'
-                        className='btn-sm'
-                        onClick={
-                          _this.state.sendMax
-                            ? _this.handleSendAll
-                            : _this.handleSend
-                        }
-                      />
+
                     </Box>
                   </Col>
                   <Col sm={12} className='text-center'>
@@ -156,7 +157,7 @@ class EncryptedChat extends React.Component {
                   <td>https://memo.cash</td>
                </tr>
             </table>
-          
+
           </Box>
 
         </Content>
