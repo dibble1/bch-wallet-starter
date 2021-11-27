@@ -39,7 +39,7 @@ class EncryptedChat extends React.Component {
       <>
         <Content>
           <Row>
-            <Col sm={2}>
+            <Col sm={12}>
               <Box
               title='Swap BCH For MGTOW'
                 loaded={!_this.state.inFetch}
