@@ -47,6 +47,7 @@ class EncryptedChat extends React.Component {
                 closable
                 collapsable
                 noPadding
+                collapsed
               >
                 <Row>
                   <Col sm={12} className='text-center'>
