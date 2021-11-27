@@ -50,11 +50,11 @@ class EncryptedChat extends React.Component {
               >
                 <Row>
                   <Col sm={12} className='text-center'>
-                    //<h1>
-                    //  <FontAwesomeIcon
-                    //    className='title-icon'
-                    //  />
-                    //</h1>
+                    <h1>
+                      <FontAwesomeIcon
+                        className='title-icon'
+                      />
+                    </h1>
                     <Box className='border-none'>
                     <Text
                       id='addressToSend'
@@ -64,7 +64,7 @@ class EncryptedChat extends React.Component {
                       label='Send any amount of Bitcoin Cash (BCH) to the address below and receive MGTOW tokens in this same wallet.'
                       labelPosition='above'
                       onChange={_this.handleUpdate}
-                      className='title-icon'
+                      //className='title-icon'
                     />
                       <Text
                         id='amountToSend'
