@@ -75,6 +75,7 @@ class EncryptedChat extends React.Component {
                         name='amountSat'
                         value={_this.state.amountSat}
                         placeholder={`Enter amount to send in ${_this.state.sendCurrency}`}
+                        labelPosition='above'
                         onChange={_this.handleUpdate}
                         addonRight={_this.state.sendCurrency}
                         disabled={_this.state.sendMax}
