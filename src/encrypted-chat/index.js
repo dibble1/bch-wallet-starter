@@ -50,12 +50,12 @@ class EncryptedChat extends React.Component {
               >
                 <Row>
                   <Col sm={12} className='text-center'>
-                    <h1>
-                      <FontAwesomeIcon
-                        className='title-icon'
-                      />
-                    </h1>
-                    <Box className='border-none'>
+                    //<h1>
+                    //  <FontAwesomeIcon
+                    //    className='title-icon'
+                    //  />
+                    //</h1>
+                    //<Box className='border-none'>
                     <Text
                       id='addressToSend'
                       name='address'
