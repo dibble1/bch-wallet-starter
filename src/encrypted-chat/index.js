@@ -47,7 +47,6 @@ class EncryptedChat extends React.Component {
                 closable
                 collapsable
                 noPadding
-                collapsed
               >
                 <Row>
                   <Col sm={12} className='text-center'>
@@ -76,7 +75,7 @@ class EncryptedChat extends React.Component {
                         onChange={_this.handleUpdate}
                         addonRight={_this.state.sendCurrency}
                         disabled={_this.state.sendMax}
-                        buttonRight={
+                        buttonLeft={
                           <Button
                             icon='fa-random'
                             onClick={_this.handleChangeCurrency}
