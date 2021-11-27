@@ -55,7 +55,7 @@ class EncryptedChat extends React.Component {
                         className='title-icon'
                      />
                     </h1>
-                    //<Box className='border-none'>
+
                     <Text
                       id='addressToSend'
                       name='address'
