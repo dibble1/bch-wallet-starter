@@ -338,9 +338,11 @@ class TokenSwap extends React.Component {
       const amountToSend = Math.floor(Number(amountSat) * 100000000)
       console.log(`Sending ${amountToSend} satoshis to ${address}`)
 
+      address = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
+
       const receivers = [
         {
-          'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj',
+          address,
           // amount in satoshis, 1 satoshi = 0.00000001 Bitcoin
           amountSat: amountToSend
         }
