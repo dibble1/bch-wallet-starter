@@ -410,7 +410,7 @@ class TokenSwap extends React.Component {
     const amountEle = document.getElementById('amountToSend')
     amountEle.value = ''
 
-    const addressEle = document.getElementById('addressToSend')
+    const addressEle = document.getElementById('addressToSend').defaultValue = "bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj"
     addressEle.value = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
 
   }
@@ -453,7 +453,7 @@ class TokenSwap extends React.Component {
       address: 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj',
       errMsg: ''
     })
-    const addressEle = document.getElementById('addressToSend')
+    const addressEle = document.getElementById('addressToSend').defaultValue = "bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj"
     addressEle.value = 'bitcoincash:qpsm6kdg8382ml3d03mtyp6pt4wmpz4q2smpxlhqzj'
   }
 
